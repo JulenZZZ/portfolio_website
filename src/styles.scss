@@ -10947,19 +10947,7 @@ html {
   padding: 1.25rem 2.5rem;
 }
 
-.callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../src/assets/img/bg-callout.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.callout h2, .callout .h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: block;
-  max-width: 30rem;
-}
+
 
 footer.footer {
   padding-top: 5rem;
@@ -11101,4 +11089,78 @@ footer.footer .social-link:hover {
 
 #icono{
   font-size: 80px;
+}
+
+#tooltip {
+  position: relative;
+
+}
+
+#tooltip #tooltiptext {
+  visibility: hidden;
+  width: 120px; 
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+.frontend{
+  background-color: darkgreen;
+}
+.backend{
+  background-color: darkkhaki;
+  
+}
+
+.scm{
+  background-color: darkgrey;
+}
+
+.database{
+  background-color: darkgoldenrod;
+}
+
+.framework{
+  background-color: darkgray;
+}
+
+
+#tooltip:hover #tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Underline styles */
+#habilidades {
+	display: inline-block;
+	position: relative;
+	padding: 0.1em 0;
+}
+
+/* Fade in */
+#habilidades::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: orange;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+#habilidades:hover::after,
+#habilidades:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
 }
