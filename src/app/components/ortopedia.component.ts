@@ -7,5 +7,7 @@ import { Component } from "@angular/core";
     })
 
 export class OrtopediaComponent {
-    
+    ngOnInit() {
+        console.log("ortopedia.component cargado");
+    }
 }
