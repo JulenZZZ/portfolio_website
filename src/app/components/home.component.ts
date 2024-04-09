@@ -6,7 +6,7 @@ import { RouterModule,RouterOutlet } from "@angular/router";
     selector: "app-projects",
     standalone: true,
     templateUrl: "../views/home.html",
-    styleUrls: ["../app.component.scss"],
+    styleUrls: ["../styles/app.component.scss"],
     imports: [RouterModule, RouterOutlet]
     })
 
