@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterModule,RouterLinkActive } from '@angular/router';
 import { HomeComponent } from './components/home.component';
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 
 @Component({
   selector: 'app-root',
